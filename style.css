@@ -56,6 +56,7 @@ header{
 }
 .banner{
     display: flex;
+    gap: 20px;
 }
 .section-title{
     font-size: 40px;
@@ -87,6 +88,113 @@ header{
     flex-wrap: wrap;
     gap: 20px;
 }
+/* card */
+ .card-title{
+    display: flex;
+    justify-content: center;
+    padding: 30px ;
+    font-size: 28px;
+} 
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 130px;
+    
+}
+.product-card {
+  background: #fff;
+  width:329px ;
+  height: 430px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  column-gap: 30px;
+  padding: 20px 20px;
+ 
+  
+}
+.product-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.see-more{
+    display: flex;
+   justify-content: center;
+    padding: 20px;
+    color: #E02C6D;
+    
+   
+}
+/* Featured-section */
+.Featured{
+    display: flex;
+    /* width: 1110px;
+    height: 270px; */
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 100px 165px;
+    gap: 90px;
+}
+.Featurd-title{
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.Featurd-pragraph{
+    width: 500px;
+    height:88px ;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-top: 10px;
+}
+.Featurd-btn{
+    width: 190px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: white;
+    opacity: 100%;
+    border: none;
+   margin-top: 20px;
+}
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+footer h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+footer p{
+    font-size: 14px;
+    margin: 5px 0px;
+    color: #D9DBE1;
+}
+.icon a{
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.icon a :hover{
+    color: cadetblue;
+}
+
 
 /* responsiv-desgin */
 @media screen and (max-width:576px) {
@@ -141,8 +249,9 @@ align-items: center;
     margin-bottom: -30px;
     margin-top: 10px;
    
-    
-   
+}
+.section-image img{
+    width: 100%;
 }
 .sponsers-img{
     
@@ -150,14 +259,52 @@ justify-content: center;
 align-items: center;
 justify-items: center;
 }
+.product-grid{
+    grid-template-columns: 1fr;
+
+
+}
+.Featured{
+    flex-direction: column-reverse;
+}
+.Featurd-text{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}
+.Featured-imags{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 30px 30px;
+}
+
+ .Featurd-title{
+    font-size: 24px;
+    font-weight: bold;
+    height: 70px;
+    width: 311px;
+    line-height: auto;
+ }  
+ 
+ .Featurd-pragraph{
+
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 40px;
+    width: 100%;
+ }
+ .Featurd-btn{
+    margin-top: 90px;
+ }
+ 
+.product-grid{
+
+    padding: 0px 20px;
     
-.hide{
-    display: none;
 }
 
 }
-
-    
-
-
-
