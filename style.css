@@ -198,7 +198,9 @@ footer p{
 
 /* responsiv-desgin */
 @media screen and (max-width:576px) {
-    
+    .nav-title{
+        display: inline-block;
+    }
     .nav-item{
         display: none;
     }
@@ -208,7 +210,7 @@ footer p{
     text-align: center;
   }
 .section-title {
-    font-size: 40px;
+    font-size: 30px;
     color: #3A3A3A;
     display: grid;
     justify-content: center;
@@ -219,28 +221,36 @@ footer p{
     padding-right: 50px;
 }
 .banner{
+    display: flex;
 flex-direction: column-reverse;
 justify-content: center;
 align-items: center;
+text-align: center;
+width: 100%;
 }
 .section-heading{
     width:100%;
     justify-items: center;
     text-align: center;
+   
 }
 .section-title{
     font-size: 28px;
     width: 404px;
     height: 78px;
+    text-align: center;
 }
 .section-pragraph{
     width: 320px;
     height: 65px;
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
+   
 
 }
-.section-image{
+
+/* .section-image{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -249,8 +259,16 @@ align-items: center;
     margin-bottom: -30px;
     margin-top: 10px;
    
-}
+} */
 .section-image img{
+    width: 100%;
+}
+.sponsers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 .sponsers-img{
@@ -258,6 +276,9 @@ align-items: center;
 justify-content: center;
 align-items: center;
 justify-items: center;
+}
+.sponsers-img img{
+    display: inline-block;
 }
 .product-grid{
     grid-template-columns: 1fr;
@@ -277,9 +298,12 @@ justify-items: center;
 }
 .Featured-imags{
     display: flex;
-    width: 100%;
     justify-content: center;
     padding: 30px 30px;
+}
+.Featured-imags img{
+   width: 300px;
+   height: 188px;
 }
 
  .Featurd-title{
@@ -306,5 +330,8 @@ justify-items: center;
     padding: 0px 20px;
     
 }
+
+
+
 
 }
